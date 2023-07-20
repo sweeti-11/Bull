@@ -1,0 +1,22 @@
+
+
+.navbarcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconscolor {
+    font-size: 2rem;
+    color: #ffff;
+    margin-right: 0.5rem;
+}
+
+.search {
+    color: black;
+}   
+
+.navbar-link {
+    text-decoration: none;
+  }

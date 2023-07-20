@@ -1,0 +1,6 @@
+.carousel-control-next-icon:after{
+    display: none;
+}
+.carousel-control-prev-icon:after{
+    display: none !important;
+}
