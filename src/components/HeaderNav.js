@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
+
 function HeaderNav() {
   const [expanded, setExpanded] = useState(false);
 
@@ -45,6 +46,9 @@ function HeaderNav() {
               </Nav.Link>
               <Nav.Link as={Link} to={"/blog"} onClick={handleNavItemClick}>
                 Blog
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/commodity-analysis"} onClick={handleNavItemClick}>
+              Commodity Market
               </Nav.Link>
               <Nav.Link
                 as={Link}

@@ -13,6 +13,10 @@ import ForgetPassword from "./AcountLogin/ForgetPassword";
 import Mobile_verification from "./AcountLogin/Mobile_verification";
 import Email_verification from "./AcountLogin/Email_verification";
 import Document_verification from "./AcountLogin/Document_verification";
+import News from "./News";
+import SingleNewsPage from "./SingleNewsPage";
+import MissionAndPromise from "./MissionAndPromise";
+import CommodityAnalysis from "./CommodityAnalysis";
 
 const App = () => {
   return (
@@ -26,12 +30,15 @@ const App = () => {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/news" element={<News/>} />
         <Route path="/single-blog" element={<SingleBlogPage />} />
+        <Route path="/single-news" element={<SingleNewsPage />} />
         <Route path="/forgot-password" element={<ForgetPassword />} />
         <Route path="/mobile-verification" element={<Mobile_verification/>} />
         <Route path="/email-verification" element={<Email_verification/>} />
         <Route path="/document-verification" element={<Document_verification/>} />
-
+        <Route path="/mission-promise" element={<MissionAndPromise/>} />
+        <Route path="/commodity-analysis" element={<CommodityAnalysis/>} />
       </Routes>
     </>
   );
