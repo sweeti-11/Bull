@@ -85,7 +85,7 @@ import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 
 const ApexChart = () => {
-  const  prices=['100000000000'];
+  const  prices=['2000000000','3000000000','4000000000','5000000000','3000000000','3000000000','3000000000','3000000000','3000000000', '3000000000','3000000000','3000000000'];
   const [chartData, setChartData] = useState({
     series: [
       {
@@ -143,7 +143,7 @@ const ApexChart = () => {
       },
       yaxis: {
         labels: {
-          formatter: function (prices) {
+          formatter: function (val) {
             return (prices / 1000000).toFixed(0);
           }
         },
