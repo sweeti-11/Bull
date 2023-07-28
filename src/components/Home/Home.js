@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import '../Future/Future.css'
 import AffiliateImg from '../assets/slider1.jpg';
 import { BiDollar} from "react-icons/bi";
-import {BsAward } from "react-icons/bs";
+import {BsAward , BsFillCalendar2EventFill} from "react-icons/bs";
 import Swipper from "./Swipper";
 import Maingraph from "../assets/main-graph.png";
 import Video from "../assets/Header_Video.mp4";
@@ -33,6 +34,9 @@ import { Helmet } from "react-helmet";
 import { useContext } from "react";
 import { AppContext } from "../../Context/Context";
 import Testimonial from "./Testimonial";
+import Servies_section from "../Servies_section";
+import Trade from "../Trade";
+import Activity from "../Activity";
 
 const Home = () => {
   const Data = useContext(AppContext);
@@ -96,6 +100,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Servies_section/>
+      <Trade/>
+      <Activity/>
       <section id="about-home" class="about-home">
       <div class="section-header text-center">
           <h2 style={{paddingTop:"46px", color: "#059473", fontSize:"45px", fontWeight:"500"}}>About Us</h2>
@@ -448,17 +455,37 @@ const Home = () => {
               </div>
             </div>
             <div className="col">
-              <div className="mobile__content ">
+              <div className="mobile__content features-future">
                
                 <h2 className="mobile__heading text-black pt-3">
-                  Trusted Platform Anytime & Anywhere
+                  Connecting the continent to the world market
                 </h2>
-                <div className="col flex justify-start items-center text-center flex-row gap-1">
+                <div className="col flex justify-start items-center text-center flex-row gap-1 mb-5">
                   <div className="color1"></div> <div className="color2"></div>{" "}
                   <div className="color3"></div> <div className="color4"></div>{" "}
                   <div className="color5"></div> <div className="color6"></div>
                 </div>
-                <p className="mobile__para text-black">
+                <div class="icon-box mt-5 mt-lg-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+              {/* <i class="bx bx-receipt"></i> */}<BsFillCalendar2EventFill/>
+              <h4>Est labore ad</h4>
+              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+            <div class="icon-box mt-5 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+              {/* <i class="bx bx-cube-alt"></i> */}<BsFillCalendar2EventFill/>
+              <h4>Harum esse qui</h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+            <div class="icon-box mt-5 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+              {/* <i class="bx bx-images"></i> */}<BsFillCalendar2EventFill/>
+              <h4>Aut occaecati</h4>
+              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            </div>
+            <div class="icon-box mt-5 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+              {/* <i class="bx bx-shield"></i> */}<BsFillCalendar2EventFill/>
+              <h4>Beatae veritatis</h4>
+              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+            </div>
+                {/* <p className="mobile__para text-black">
                   The Bulleye mobile app adapts the full functionality of the
                   Bulleye platform for seamless ‘on-the-go’ trading.
                   <br />
@@ -471,11 +498,8 @@ const Home = () => {
                 <p className="mobile__para text-black">
                   The dawn of a better world that is freer. Send or receive any
                   amount of money from anywhere on the planet!
-                </p>
+                </p> */}
                 <div className="row flex justify-start gap-4 pt-3 appStoreBtn">
-                  {/* <div className="col ">
-                    <img src={AppStore} alt="mobile" />
-                  </div> */}
                   <div className="col">
                     <img src={GoogleStore} alt="mobile" />
                   </div>
