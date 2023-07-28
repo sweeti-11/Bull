@@ -1032,8 +1032,12 @@ margin: 17px;
 }
 .servi{
   border: 1px solid;
-  padding: 15px;
+  padding: 5px;
  }
+.servi:hover{
+  background-color: #ddd;
+  transform: rotate(5deg);
+}
 
  .servv{
  background: white;
